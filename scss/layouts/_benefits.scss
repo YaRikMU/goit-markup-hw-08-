@@ -21,7 +21,8 @@
   }
 
   &__title {
-     @include fonts(700, 14px, 1.14, 0.03em, null);
+    @include fonts(700, 14px, 1.14, 0.03em);
+    text-align: center;
     text-transform: uppercase;
     color: var(--title-text-color);
   }

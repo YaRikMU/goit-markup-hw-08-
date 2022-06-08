@@ -5,7 +5,7 @@
 }
 .examples__title {
   margin-bottom: 50px;
-  @include fonts(700, 36px, 1.17, 0.03em, center);
+  @include fonts(700, 36px, 1.17, 0.03em);
   text-align: center;
   color: var(--title-text-color);
 }
