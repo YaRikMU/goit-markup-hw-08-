@@ -1,0 +1,21 @@
+.socials-action {
+  margin-right: 93px;
+
+  &__link {
+    background-color: #44454e;
+  }
+
+  &__icon {
+    fill: var(--buuton-text-color);
+  }
+}
+.socials__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--buuton-text-color);
+}
