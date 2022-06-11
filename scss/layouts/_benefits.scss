@@ -1,45 +1,66 @@
 /*================= Benefits============== */
 
-.advantages {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &__icon {
-    fill: var(--color1, #2196f3);
-    fill: var(--color2, #212121);
+.advantages-list {
+  @media screen and(min-width:768px) {
+    display: grid;
+    grid-template-columns: 354px 354px;
+    grid-gap: 30px;
+    // display: flex;
+    // flex-wrap: wrap;
+    // margin: -15px;
   }
-
-  &__box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    background-color: var(--our-team-bg-color);
-  }
-
-  &__title {
-    @include fonts(700, 14px, 1.14, 0.03em);
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--title-text-color);
-  }
-
-  &__subscribe {
-    color: var(--prymary-text-color);
+  @media screen and(min-width:1200px) {
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px;
+    grid-gap: 30px;
   }
 }
 .advantages__item {
-  width: 270px;
-  margin-right: 30px;
-
-  &:last-child {
-    margin-right: 0;
+  &:not(:last-child) {
+    @media screen and(max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 
-  & .advantages__title {
-    margin-bottom: 10px;
+  //   @media screen and(min-width: 768px) {
+  //     min-width: 354px;
+  //     flex-basis: calc((100% - 4 * 15px) / 2);
+  //     margin: 15px;
+  //   }
+
+  //   @media screen and(min-width: 1200px) {
+  //     min-width: 270px;
+  //     margin: 15px;
+  //     flex-basis: calc((100% - 8 * 15px) / 4);
+  //   }
+}
+
+.advantages__thumb {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: var(--our-team-bg-color);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.advantages__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.advantages__title {
+  @include fonts(700, 14px, 1.14, 0.03em);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+  @media screen and(min-width: 768px) {
+    text-align: left;
   }
+}
+
+.advantages__subscribe {
+  color: var(--prymary-text-color);
 }

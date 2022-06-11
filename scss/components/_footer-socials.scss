@@ -1,5 +1,9 @@
 .socials-action {
   margin-right: 93px;
+  @media screen and(max-width: 767px) {
+    margin-bottom: 60px;
+    margin-right: 0;
+  }
 
   &__link {
     background-color: #44454e;
@@ -11,11 +15,14 @@
 }
 .socials__title {
   margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  @include fonts(700, 14px, 1.14, 0.03em);
+
   text-transform: uppercase;
 
   color: var(--buuton-text-color);
+  @media screen and(max-width: 767px) {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
 }
