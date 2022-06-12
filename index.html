@@ -13,12 +13,12 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
     <!--Шапка-->
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header-container">
             <a class="logo" href="./index.html">Web<span class="logo__link">Studio</span> </a>
             <nav class="main-nav">
@@ -50,12 +50,50 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+            <button type="button" class="menu-button-mobile" aria-expanded="false" aria-controls="menu-container"
+                data-menu-button>
+                <svg width="40px" height="40px" aria-label="переключатель мобильного меню">
+                    <use class="icon-cross" href="./images/icons.svg#icon-close_40px" />
+                    <use class="icon-menu" href="./images/icons.svg#icon-menu_40px" />
+                </svg>
+            </button>
+            <div class="menu-container" id="menu-container" data-menu>
+                <nav class="main-nav">
+                    <ul class="main-nav__list list">
+                        <li class="main-nav__item">
+                            <a href="./index.html" class="main-nav__link link current">Студия</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="./portfolio.html" class="main-nav__link link">Портфолио</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#address" class="main-nav__link link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="nav-contact list">
+                    <li class="nav-contact__item">
+                        <a href="mailto:info@devstudio.com" class="nav-contact__link link">
+                            <svg class="nav-contact__icon" width="16" height="12">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+                    <li class="nav-contact__item">
+                        <a href="tel:+380961111111" class="nav-contact__link link">
+                            <svg class="nav-contact__icon" width="10" height="16">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header> -->
+    </header>
     <!--Основний контент-->
     <main>
         <!-- hero -->
-        <!-- <section class="hero">
+        <section class="hero">
             <div class="container">
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="hero__btn btn btn--hover" data-modal-open>
@@ -118,7 +156,7 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <!--benefits-->
         <section class="section">
             <div class="container">
@@ -179,14 +217,14 @@
                     <li class="examples__item">
                         <div class="examples-box">
                             <picture>
-                                <source media="(min-width: 1200px)"
-                                    srcset="images\what-we-do\whattodo-1-1200@1x.jpg 1x, images\what-we-do\whattodo-1-1200@1x.jpg 2x"
-                                    type="image/jpg">
+                                <source media="(min-width: 1200px)" srcset="
+                      images\what-we-do\whattodo-1-1200@1x.jpg 1x,
+                      images\what-we-do\whattodo-1-1200@1x.jpg 2x
+                    " type="image/jpg" />
 
                                 <img class="examples-box__img" src="images\what-we-do\whattodo-1-1200@1x.jpg"
                                     alt="работа на планшете" width="370" height="294" />
                             </picture>
-
 
                             <h3 class="examples-box__title">Десктопные приложения</h3>
                         </div>
@@ -194,13 +232,13 @@
                     <li class="examples__item">
                         <div class="examples-box">
                             <picture>
-                                <source media="(min-width: 1200px)"
-                                    srcset="images\what-we-do\whattodo-2-1200@1x.jpg 1x, images\what-we-do\whattodo-2-1200@1x.jpg 2x"
-                                    type="image/jpg">
+                                <source media="(min-width: 1200px)" srcset="
+                      images\what-we-do\whattodo-2-1200@1x.jpg 1x,
+                      images\what-we-do\whattodo-2-1200@1x.jpg 2x
+                    " type="image/jpg" />
                                 <img class="examples-box__img" src="images\what-we-do\whattodo-2-1200@1x.jpg"
                                     alt="работа на телефоне" width="370" height="294" />
                             </picture>
-
 
                             <h3 class="examples-box__title">Мобильные приложения</h3>
                         </div>
@@ -208,13 +246,13 @@
                     <li class="examples__item">
                         <div class="examples-box">
                             <picture>
-                                <source media="(min-width: 1200px)"
-                                    srcset="images\what-we-do\whattodo-3-1200@1x.jpg 1x, images\what-we-do\whattodo-3-1200@1x.jpg 2x"
-                                    type="image/jpg">
+                                <source media="(min-width: 1200px)" srcset="
+                      images\what-we-do\whattodo-3-1200@1x.jpg 1x,
+                      images\what-we-do\whattodo-3-1200@1x.jpg 2x
+                    " type="image/jpg" />
                                 <img class="examples-box__img" src="images\what-we-do\whattodo-3-1200@1x.jpg"
                                     alt="работа с графикой" width="370" height="294" />
                             </picture>
-
 
                             <h3 class="examples-box__title">Дизайнерские решения</h3>
                         </div>
@@ -226,18 +264,21 @@
         <section class="section team">
             <div class="container">
                 <h2 class="team__title">Наша команда</h2>
-                <ul class="team__list list ">
+                <ul class="team__list list">
                     <li class="team__item">
                         <picture>
-                            <source media="(min-width: 1200px)"
-                                srcset="images/our-team/team-1-1200@1x.jpg 1x, images/our-team/team-1-1200@2x.jpg 2x"
-                                type="image/jpg">
-                            <source media="(min-width: 768px)"
-                                srcset="images/our-team/team-1-768@1x.jpg 1x, images/our-team/team-1-768@2x.jpg 2x"
-                                type="image/jpg">
-                            <source media="(max-width: 767px)"
-                                srcset="images/our-team/team-1-480@1x.jpg 1x, images/our-team/team-1-480@2x.jpg 2x"
-                                type="image/jpg">
+                            <source media="(min-width: 1200px)" srcset="
+                    images/our-team/team-1-1200@1x.jpg 1x,
+                    images/our-team/team-1-1200@2x.jpg 2x
+                  " type="image/jpg" />
+                            <source media="(min-width: 768px)" srcset="
+                    images/our-team/team-1-768@1x.jpg 1x,
+                    images/our-team/team-1-768@2x.jpg 2x
+                  " type="image/jpg" />
+                            <source media="(max-width: 767px)" srcset="
+                    images/our-team/team-1-480@1x.jpg 1x,
+                    images/our-team/team-1-480@2x.jpg 2x
+                  " type="image/jpg" />
                             <img class="team__img" src="images\our-team\team-1-480@1x.jpg" alt="фото Игорь Демьяненко"
                                 width="" height="" />
                         </picture>
@@ -275,15 +316,18 @@
                     </li>
                     <li class="team__item">
                         <picture>
-                            <source media="(min-width: 1200px)"
-                                srcset="images/our-team/team-2-1200@1x.jpg 1x, images/our-team/team-2-1200@2x.jpg 2x"
-                                type="image/jpg">
-                            <source media="(min-width: 768px)"
-                                srcset="images/our-team/team-2-768@1x.jpg 1x, images/our-team/team-2-768@2x.jpg 2x"
-                                type="image/jpg">
-                            <source media="(max-width: 767px)"
-                                srcset="images/our-team/team-2-480@1x.jpg 1x, images/our-team/team-2-480@2x.jpg 2x"
-                                type="image/jpg">
+                            <source media="(min-width: 1200px)" srcset="
+                    images/our-team/team-2-1200@1x.jpg 1x,
+                    images/our-team/team-2-1200@2x.jpg 2x
+                  " type="image/jpg" />
+                            <source media="(min-width: 768px)" srcset="
+                    images/our-team/team-2-768@1x.jpg 1x,
+                    images/our-team/team-2-768@2x.jpg 2x
+                  " type="image/jpg" />
+                            <source media="(max-width: 767px)" srcset="
+                    images/our-team/team-2-480@1x.jpg 1x,
+                    images/our-team/team-2-480@2x.jpg 2x
+                  " type="image/jpg" />
                             <img class="team__img" src="images\our-team\team-2-480@1x.jpg" alt="фото Ольга Репина"
                                 width="" height="" />
                         </picture>
@@ -321,15 +365,18 @@
                     </li>
                     <li class="team__item">
                         <picture>
-                            <source media="(min-width: 1200px)"
-                                srcset="images/our-team/team-3-1200@1x.jpg 1x, images/our-team/team-3-1200@2x.jpg 2x"
-                                type="image/jpg">
-                            <source media="(min-width: 768px)"
-                                srcset="images/our-team/team-3-768@1x.jpg 1x, images/our-team/team-3-768@2x.jpg 2x"
-                                type="image/jpg">
-                            <source media="(max-width: 767px)"
-                                srcset="images/our-team/team-3-480@1x.jpg 1x, images/our-team/team-3-480@2x.jpg 2x"
-                                type="image/jpg">
+                            <source media="(min-width: 1200px)" srcset="
+                    images/our-team/team-3-1200@1x.jpg 1x,
+                    images/our-team/team-3-1200@2x.jpg 2x
+                  " type="image/jpg" />
+                            <source media="(min-width: 768px)" srcset="
+                    images/our-team/team-3-768@1x.jpg 1x,
+                    images/our-team/team-3-768@2x.jpg 2x
+                  " type="image/jpg" />
+                            <source media="(max-width: 767px)" srcset="
+                    images/our-team/team-3-480@1x.jpg 1x,
+                    images/our-team/team-3-480@2x.jpg 2x
+                  " type="image/jpg" />
                             <img class="team__img" src="images\our-team\team-3-480@1x.jpg" alt="фото Николай Тарасов"
                                 width="" height="" />
                         </picture>
@@ -367,15 +414,18 @@
                     </li>
                     <li class="team__item">
                         <picture>
-                            <source media="(min-width: 1200px)"
-                                srcset="images/our-team/team-4-1200@1x.jpg 1x, images/our-team/team-4-1200@2x.jpg 2x"
-                                type="image/jpg">
-                            <source media="(min-width: 768px)"
-                                srcset="images/our-team/team-4-768@1x.jpg 1x, images/our-team/team-4-768@2x.jpg 2x"
-                                type="image/jpg">
-                            <source media="(max-width: 767px)"
-                                srcset="images/our-team/team-4-480@1x.jpg 1x, images/our-team/team-4-480@2x.jpg 2x"
-                                type="image/jpg">
+                            <source media="(min-width: 1200px)" srcset="
+                    images/our-team/team-4-1200@1x.jpg 1x,
+                    images/our-team/team-4-1200@2x.jpg 2x
+                  " type="image/jpg" />
+                            <source media="(min-width: 768px)" srcset="
+                    images/our-team/team-4-768@1x.jpg 1x,
+                    images/our-team/team-4-768@2x.jpg 2x
+                  " type="image/jpg" />
+                            <source media="(max-width: 767px)" srcset="
+                    images/our-team/team-4-480@1x.jpg 1x,
+                    images/our-team/team-4-480@2x.jpg 2x
+                  " type="image/jpg" />
                             <img class="team__img" src="images\our-team\team-4-480@1x.jpg" alt="фото Михаил Ермаков"
                                 width="" height="" />
                         </picture>
@@ -415,7 +465,7 @@
             </div>
         </section>
         <!--OUR clients-->
-        <section class=" section">
+        <section class="section">
             <div class="container">
                 <h2 class="clients team__title">Постоянные клиенты</h2>
                 <ul class="clients__list list">
@@ -532,6 +582,7 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-modal.js"></script>
 </body>
 
 </html>

@@ -1,10 +1,14 @@
 /* ============Header============= */
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 
   &-container {
     display: flex;
     align-items: center;
+    @media screen and(max-width: 1199px) {
+      justify-content: space-between;
+    }
   }
 }
 
@@ -12,6 +16,9 @@
   &__list {
     display: flex;
     align-items: center;
+    @media screen and(max-width: 767px) {
+      display: none;
+    }
 
     font-weight: 500;
     font-size: 14px;
@@ -65,12 +72,29 @@
 }
 
 .nav-contact {
-  margin-left: auto;
   display: flex;
-  align-items: center;
+  @media screen and(max-width: 767px) {
+    display: none;
+  }
+  @media screen and(min-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  @media screen and(min-width:1200px) {
+    margin-left: auto;
+    flex-direction: row;
+
+    align-items: center;
+  }
 
   &__item:first-child {
-    margin-right: 30px;
+    @media screen and(min-width: 768px) {
+      margin-bottom: 10px;
+    }
+    @media screen and(min-width: 1200px) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
   }
 
   &__icon {
@@ -82,9 +106,14 @@
 .nav-contact__link {
   display: flex;
   align-items: center;
-
-  padding-top: 32px;
-  padding-bottom: 32px;
+  @media screen and(min-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  @media screen and(min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
   font-weight: 500;
   font-size: 14px;
@@ -97,5 +126,42 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+}
+
+.menu-button-mobile {
+  @media screen and(min-width: 768px) {
+    display: none;
+  }
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.menu-button-mobile .icon-cross {
+  display: none;
+}
+.menu-button-mobile.is-open .icon-cross {
+  display: block;
+}
+.menu-button-mobile.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  // background-color: aqua;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  height: 480px;
+  &.is-open {
+    display: block;
   }
 }

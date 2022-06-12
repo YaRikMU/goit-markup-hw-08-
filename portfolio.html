@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+
     <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
@@ -27,7 +27,7 @@
             <nav class="main-nav">
                 <ul class="main-nav__list list">
                     <li class="main-nav__item">
-                        <a href="./index.html" class="main-nav__link link">Студия</a>
+                        <a href="./index.html" class="main-nav__link link ">Студия</a>
                     </li>
                     <li class="main-nav__item">
                         <a href="./portfolio.html" class="main-nav__link link current">Портфолио</a>
@@ -53,6 +53,16 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+            <button type="button" class="menu-button-mobile" aria-expanded="false" aria-controls="menu-container"
+                data-menu-button>
+                <svg width="40px" height="40px" aria-label="переключатель мобильного меню">
+                    <use class="icon-cross" href="./images/icons.svg#icon-close_40px" />
+                    <use class="icon-menu" href="./images/icons.svg#icon-menu_40px" />
+                </svg>
+            </button>
+            <div class="menu-container" id="menu-container" data-menu>
+
+            </div>
         </div>
     </header>
     <main>

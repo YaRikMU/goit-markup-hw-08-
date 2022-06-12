@@ -2,7 +2,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  @media screen and(max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  @media screen and(min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .button {
@@ -35,6 +45,14 @@
 
 .item-projects {
   margin-right: 8px;
+  @media screen and(max-width:767px) {
+    margin-bottom: 15px;
+  }
+  @media screen and(max-width:767px) {
+  }
+  &:nth-child(n + 4) {
+    margin-bottom: 0;
+  }
 
   &:last-child {
     margin-right: 0;
