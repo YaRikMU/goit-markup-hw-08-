@@ -1,25 +1,39 @@
 /* ==========Постоянные клиенты Clients=============== */
 .clients__list {
-  display: grid;
-  grid-template-columns: 210px 210px;
-  grid-gap: 30px;
-  @media screen and(min-width:768px) {
-    display: grid;
-    grid-template-columns: 226px 226px 226px;
-    grid-gap: 30px;
-  }
-  @media screen and(min-width:1200px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 30px;
-  }
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  // display: grid;
+  // grid-template-columns: 210px 210px;
+  // grid-gap: 30px;
+  // @media screen and(min-width:768px) {
+
+  // display: grid;
+  // grid-template-columns: 226px 226px 226px;
+  // grid-gap: 30px;
+  // }
+  // @media screen and(min-width:1200px) {
+
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  //   grid-gap: 30px;
+  // }
   // display: flex;
   // align-items: center;
   // justify-content: center;
 }
-// .clients__item {
-
-// }
+.clients__item {
+  width: calc((100% - 2 * 30px) / 2);
+  height: 90px;
+  margin: 15px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 3 * 30px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 6 * 30px) / 6);
+  }
+}
 .clients__link {
   display: flex;
   align-items: center;

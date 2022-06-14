@@ -4,10 +4,22 @@
   background-color: var(--our-team-bg-color);
 
   &__title {
-    @include fonts(700, 36px, 1.17, 0.03em);
+    @include fonts(700, 28px, 1.17, 0.03em);
+    // font-weight: 700;
+    // font-size: 28px;
+    // line-height: 33px;
+    // /* identical to box height */
+
+    // text-align: center;
+    // letter-spacing: 0.03em;
     text-align: center;
     margin-bottom: 50px;
+    @media screen and(min-width: 1200px) {
+      @include fonts(700, 36px, 1.17, 0.03em);
+    }
     @media screen and(max-width: 1199px) {
+      font-style: normal;
+
       margin-bottom: 30px;
     }
     color: var(--title-text-color);
