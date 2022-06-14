@@ -992,8 +992,12 @@ ul {
   color: var(--accent-color);
 }
 
-.menu-social__item:not(:last-child) {
-  margin-right: 20px;
+.menu-social__item:not(:last-child)::after {
+  content: '';
+  height: 100%;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .menu-social__link {
