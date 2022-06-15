@@ -135,7 +135,7 @@
 }
 
 .menu-button-mobile {
-  z-index: 100;
+  z-index: 150;
   @media screen and(min-width: 768px) {
     display: none;
   }
@@ -144,7 +144,8 @@
   padding: 0;
   border: none;
   background-color: transparent;
-
+  transition: color var(--transition-duration) var(--transition-timing-function);
+  &:focus,
   &:focus {
     fill: var(--accent-color);
   }
@@ -155,18 +156,21 @@
 }
 .menu-button-mobile.is-open .icon-cross {
   display: block;
-  fill: var(--title-text-color);
+  // fill: var(--title-text-color);
+  &:focus,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 .menu-button-mobile.is-open .icon-menu {
   display: none;
 }
 
 .menu-container {
+  z-index: 100;
   background-color: #fff;
-  @media screen and(min-width: 768px) {
-    display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
+  &.is-open {
+    display: block;
   }
   @media screen and(max-width: 767px) {
     display: none;
@@ -174,9 +178,11 @@
     top: 100%;
     left: 0;
     width: 100%;
-    &.is-open {
-      display: block;
-    }
+  }
+  @media screen and(min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
   }
 }
 .menu-container.is-open {
@@ -215,7 +221,12 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
 .menu-social__link {
+  transition: color var(--transition-duration) var(--transition-timing-function);
   @include fonts(500, 18px, 1.22, 00.02em);
+  &:hover,
+  &:focus {
+    color: var(--hover-color);
+  }
 }
 @media screen and(max-width: 767px) {
   .menu-social {

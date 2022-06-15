@@ -16,8 +16,10 @@
   flex-wrap: wrap;
 }
 .work-item {
+  margin-bottom: 30px;
   display: flex;
   max-width: 450px;
+
   @media screen and(min-width: 768px) {
     height: 100%;
     width: 354px;
@@ -36,7 +38,9 @@
   //   margin-bottom: 0;
   // }
 }
-
+.sub-img {
+  z-index: 1;
+}
 .sub-overlay {
   position: relative;
   overflow: hidden;

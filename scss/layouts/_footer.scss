@@ -51,11 +51,12 @@
   }
 }
 .logo-footer__link {
-  @media screen and(max-width: 767px) {
-    margin-right: 0;
+  // margin-right: 0;
+
+  @media screen and(min-width: 768px) {
+    display: block;
+    margin-bottom: 20px;
   }
-  display: block;
-  margin-bottom: 20px;
 }
 
 .logo-footer__text--white {
