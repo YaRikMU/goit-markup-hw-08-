@@ -81,7 +81,8 @@
 /* MODALLL FORM */
 .div-box {
   padding: 40px;
-  width: 100%;
+  height: 100%;
+  overflow-y: auto;
 }
 .form-data {
   &__group {

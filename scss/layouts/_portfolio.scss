@@ -16,11 +16,15 @@
   flex-wrap: wrap;
 }
 .work-item {
-  margin-bottom: 30px;
+  @media screen and(max-width: 767px) {
+    margin-bottom: 30px;
+  }
+
   display: flex;
   max-width: 450px;
 
   @media screen and(min-width: 768px) {
+    // flex-basis: calc(100%-2 * 30px) / 2;
     height: 100%;
     width: 354px;
   }

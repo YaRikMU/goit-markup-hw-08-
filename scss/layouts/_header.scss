@@ -155,6 +155,7 @@
 
 .menu-button-mobile .icon-cross {
   display: none;
+  position: fixed;
 }
 .menu-button-mobile.is-open .icon-cross {
   display: block;
