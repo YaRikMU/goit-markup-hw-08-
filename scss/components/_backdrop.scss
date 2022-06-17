@@ -12,8 +12,7 @@
   box-shadow: var(--box-shadow);
   overflow-y: scroll;
   @media screen and(max-width: 450px) {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 60px 30px;
   }
 
   &.is-hidden {

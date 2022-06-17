@@ -51,11 +51,12 @@
 }
 .overlay {
   position: absolute;
-  width: 100%;
+  max-width: 100%;
   height: 100%;
+  width: 100%;
+
   top: 0;
   transform: translateY(100%);
-  padding: 63px 24px;
 
   color: var(--buuton-text-color);
   background-color: rgba(33, 150, 243, 0.9);
@@ -69,12 +70,32 @@
   transition-timing-function: var(--transition-timing-function);
   box-shadow: var(--box-shadow);
 
-  .work-link:hover &,
-  .work-link:focus & {
-    transform: translateY(0%);
-    opacity: 1;
-    pointer-events: auto;
+  @media screen and (max-width: 479px) {
+    padding: 2vmax;
+    font-size: 18px;
+    font-weight: 500;
   }
+  @media screen and (max-width: 390px) {
+    padding: 1vmax;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px 77px 24px;
+  }
+  @media screen and (min-width: 480px) {
+    padding: 77px 24px;
+  }
+}
+
+.work-link:hover .overlay,
+.work-link:focus .overlay {
+  transform: translateY(0%);
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .sub-div {

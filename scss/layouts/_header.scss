@@ -137,6 +137,7 @@
 }
 
 .menu-button-mobile {
+  cursor: pointer;
   z-index: 150;
   @media screen and(min-width: 768px) {
     display: none;
@@ -155,21 +156,19 @@
 
 .menu-button-mobile .icon-cross {
   display: none;
-  position: fixed;
 }
 .menu-button-mobile.is-open .icon-cross {
   display: block;
   fill: var(--title-text-color);
   transition: fill var(--transition-duration) var(--transition-timing-function);
-  &:hover,
-  &:focus {
-    fill: var(--accent-color);
-  }
 }
 .menu-button-mobile.is-open .icon-menu {
   display: none;
 }
-
+.menu-button-mobile.is-open .icon-cross:hover,
+.menu-button-mobile.is-open .icon-cross:focus {
+  fill: var(--accent-color);
+}
 .menu-container {
   z-index: 100;
   background-color: #fff;

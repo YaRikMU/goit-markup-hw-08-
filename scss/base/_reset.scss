@@ -25,3 +25,7 @@ p,
 ul {
   margin: 0;
 }
+
+body.is-open {
+  overflow: hidden;
+}
