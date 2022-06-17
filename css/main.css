@@ -1789,12 +1789,9 @@ body.is-open {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .sub-div--tablet {
-    height: 147px;
-  }
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .desc {
@@ -1815,6 +1812,13 @@ body.is-open {
 }
 
 .work-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border: 1px solid #eeeeee;
   -webkit-transition: -webkit-box-shadow var(--transition-duration) var(--transition-timing-function);
   transition: -webkit-box-shadow var(--transition-duration) var(--transition-timing-function);
