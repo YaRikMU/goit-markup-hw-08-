@@ -212,7 +212,7 @@
   }
   @media screen and(min-width: 768px) {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
     flex-grow: 1;
@@ -246,9 +246,11 @@
     color: var(--hover-color);
   }
 }
+
 @media screen and(max-width: 767px) {
   .menu-social {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .main-nav__item:not(:last-child) {
@@ -259,9 +261,15 @@
     display: none;
   }
   .mailto {
+    @media screen and(max-width: 380px) {
+      @include fonts(500, 20px, 1.17, 0.02em);
+    }
     @include fonts(500, 24px, 1.17, 0.02em);
   }
   .mob {
+    @media screen and(max-width: 380px) {
+      @include fonts(500, 26px, 1.18, 0.02em);
+    }
     color: var(--accent-color);
     @include fonts(500, 34px, 1.18, 0.02em);
   }
