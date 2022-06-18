@@ -951,6 +951,7 @@ body.is-open {
 }
 
 .menu-button-mobile.is-open .icon-cross {
+  position: fixed;
   display: block;
   fill: var(--title-text-color);
   -webkit-transition: fill var(--transition-duration) var(--transition-timing-function);
