@@ -281,25 +281,15 @@ body.is-open {
   transition: transform 500ms var(--transition-timing-function), opacity 500ms var(--transition-timing-function), -webkit-transform 500ms var(--transition-timing-function);
 }
 
-@media screen and (max-width: 480px) {
-  .modal {
-    max-width: 100%;
-    max-height: 100%;
-    overflow: auto;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .modal {
     width: 450px;
-    height: 609px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    max-height: 581px;
   }
 }
 
