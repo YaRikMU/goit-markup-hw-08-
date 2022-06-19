@@ -242,7 +242,7 @@
   transition: color var(--transition-duration) var(--transition-timing-function);
   @include fonts(500, 18px, 1.22, 0.02em);
   @media screen and(max-width: 380px) {
-    @include fonts(400, 14px, 1.22, 0.02em);
+    @include fonts(400, 12px, 1.22, 0.02em);
   }
   &:hover,
   &:focus {
